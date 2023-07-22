@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/65539b4138.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <div class="calculator">
+    <div class="container">
+        <input type="text" id="display" class="display">
+            <button class="btn" id="btn">%</button>
+            <button class="btn" id="btn">CE</button>
+            <button class="btn" id="btn">C</button>
+            <button class="btn" id="btn" id="icon" onclick="display.value = display.value.toString().slice(0, -1)"><i style="font-size: 18px;" class="fa-solid fa-delete-left"></i></button>
+            <button class="btn" id="btn">7</button>
+            <button class="btn" id="btn">8</button>
+            <button class="btn" id="btn">9</button>
+            <button class="btn" id="btn">*</button>
+            <button class="btn" id="btn">4</button>
+            <button class="btn" id="btn">5</button>
+            <button class="btn" id="btn">6</button>
+            <button class="btn" id="btn">+</button>
+            <button class="btn" id="btn">1</button>
+            <button class="btn" id="btn">2</button>
+            <button class="btn" id="btn">3</button>
+            <button class="btn" id="btn">-</button>
+            <button class="btn" id="btn">/</button>
+            <button class="btn" id="btn">0</button>
+            <button class="btn" id="btn">.</button>
+            <button class="btn  id="btn"equal" onclick="
+            const result = display.value;
+            display.value = '';
+            display.value = eval(result);
+            ">=</button>
+
+            
+        </div>
+    </div>
+    <p class="copyright">Created By Muhammad Furqan Abbas. All Rights Reserved. <a href="gihub.com/mfurqanabbas20"><i class="fa-brands fa-github"></i></a></p>
+    <script src="script.js"></script>
+</body>
+</html>
